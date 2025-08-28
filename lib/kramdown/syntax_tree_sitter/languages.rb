@@ -46,6 +46,7 @@ module Kramdown
             'source.ts' => %w[ts typescript],
             'source.vhd' => %w[vhdl],
             'source.html' => %w[html],
+            'source.xml' => %w[xml],
             'text.html.erb' => %w[erb eruby rhtml]
           }
           .map { |scope, aliases| aliases.map { |alias_| [alias_, scope] } }
