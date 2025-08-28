@@ -82,13 +82,13 @@ fn highlights(
 
 fn create_html_attribute_callback<'a>(
     html_attributes: &'a [String],
-) -> impl Fn(Highlight) -> &'a [u8] {
-    |highlight| {
-        html_attributes
+) -> impl Fn(Highlight, &mut Vec<u8>) -> () + use<'a> {
+    |highlight, output| {
+        output.extend(html_attributes
             .get(highlight.0)
             .map(String::as_str)
             .unwrap_or_default()
-            .as_bytes()
+            .as_bytes())
     }
 }
 
