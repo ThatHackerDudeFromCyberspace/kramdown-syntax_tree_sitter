@@ -14,6 +14,7 @@ module Kramdown
             'source.cs' => %w[c# cs csharp],
             'source.css' => %w[css],
             'source.d' => %w[d dlang],
+            'source.diff' => %w[diff],
             'source.dot' => %w[dot],
             'source.elixir' => %w[elixir exs],
             'source.elm' => %w[elm],
