@@ -7,6 +7,7 @@ module Kramdown
         # Maps each recognized language alias to its corresponding Tree-sitter scope
         LANGUAGE_SCOPES =
           {
+            'diff' => %w[diff],
             'source.R' => %w[R S r s],
             'source.bash' => %w[bash ksh sh shell zsh],
             'source.c' => %w[c],
@@ -14,7 +15,6 @@ module Kramdown
             'source.cs' => %w[c# cs csharp],
             'source.css' => %w[css],
             'source.d' => %w[d dlang],
-            'source.diff' => %w[diff],
             'source.dot' => %w[dot],
             'source.elixir' => %w[elixir exs],
             'source.elm' => %w[elm],
